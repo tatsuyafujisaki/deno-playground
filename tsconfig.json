@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
