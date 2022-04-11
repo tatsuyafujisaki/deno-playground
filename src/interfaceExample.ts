@@ -1,7 +1,9 @@
 interface MyInterface {
-    x: number;
+  x: number;
 }
 
 const mi: MyInterface = {
-    x: 123
-}
+  x: 123,
+};
+
+console.log(mi);
