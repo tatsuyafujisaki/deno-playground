@@ -2,7 +2,6 @@ interface MyInterface {
   x: number | string;
   f1: () => void;
   f2: () => string;
-  (): string;
 }
 
 const mi: MyInterface = {
@@ -13,7 +12,6 @@ const mi: MyInterface = {
   f2: function () {
     return 'Hello';
   },
-  (): function ()
 };
 
 mi.f1();
