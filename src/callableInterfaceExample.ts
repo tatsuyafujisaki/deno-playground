@@ -2,6 +2,6 @@ interface MyCallableInteface {
   (): string;
 }
 
-const myCallableInterface: MyCallableInteface = () => 'Hello';
+const mci: MyCallableInteface = () => 'Hello';
 
-console.log(myCallableInterface());
+console.log(mci());
