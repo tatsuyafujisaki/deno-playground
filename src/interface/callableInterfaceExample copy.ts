@@ -12,6 +12,6 @@ class MyClass implements MyInterface {
   }
 }
 
-const aaa: MyNewableInteface = MyClass;
+const mni: MyNewableInteface = MyClass;
 
-console.log(aaa.name);
+console.log(mni.name);
