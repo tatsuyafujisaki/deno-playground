@@ -1,5 +1,5 @@
 interface MyInterface {
-  name: string;
+  s: string;
 }
 
 interface MyNewableInteface {
@@ -7,8 +7,8 @@ interface MyNewableInteface {
 }
 
 class MyClass implements MyInterface {
-  constructor(public name: string) {
-    console.log(name);
+  constructor(public s: string) {
+    console.log(s);
   }
 }
 
