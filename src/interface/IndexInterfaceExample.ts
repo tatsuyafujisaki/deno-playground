@@ -14,5 +14,8 @@ const mii2: MyIndexInterface2 = {
   42: 'myKey',
 };
 
+const mii2b: MyIndexInterface2 = ['a', 'b', 'c'];
+
 console.log(mii1);
 console.log(mii2);
+console.log(mii2b);
