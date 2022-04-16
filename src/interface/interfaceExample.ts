@@ -18,7 +18,7 @@ const mi: MyInterface1 = {
 
 mi.x = 43;
 mi.x = 'a';
-// mi.iAmReadOnly = 'a'; // Error
+// mi.iAmReadOnly = 'a'; // Error because it is read-only.
 
 mi.f1();
 console.log(mi.f2());
