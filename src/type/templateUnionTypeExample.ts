@@ -2,6 +2,6 @@ type City = 'Tokyo' | 'Osaka';
 type Gender = 'male' | 'female';
 type Combined = `${City}_${Gender}`;
 
-const x: Combined = 'Tokyo_female';
+const combined: Combined = 'Tokyo_female';
 
-console.log(typeof x);
+console.log(typeof combined);
