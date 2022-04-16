@@ -1,9 +1,18 @@
 interface MyIndexInterface1 {
-  [key: string]: number;
+  [_: string]: number;
 }
 
-const mii: MyIndexInterface1 = {
-  key1: 123,
+interface MyIndexInterface2 {
+  [_: number]: string;
+}
+
+const mii1: MyIndexInterface1 = {
+  myKey: 42,
 };
 
-console.log(mii);
+const mii2: MyIndexInterface2 = {
+  42: 'myKey',
+};
+
+console.log(mii1);
+console.log(mii2);
