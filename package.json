@@ -2,6 +2,7 @@
   "type": "module",
   "devDependencies": {
     "gts": "",
+    "ts-node": "",
     "typescript": "",
     "@types/node": ""
   },
