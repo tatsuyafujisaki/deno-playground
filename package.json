@@ -1,9 +1,9 @@
 {
   "devDependencies": {
+    "@types/node": "",
     "gts": "",
     "ts-node": "",
-    "typescript": "",
-    "@types/node": ""
+    "typescript": ""
   },
   "scripts": {
     "lint": "gts lint",
