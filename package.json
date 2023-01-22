@@ -2,6 +2,7 @@
   "devDependencies": {
     "@types/node": "",
     "gts": "",
+    "open": "",
     "ts-node": "",
     "typescript": ""
   },
