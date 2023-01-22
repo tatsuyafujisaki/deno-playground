@@ -1,3 +1,14 @@
+export function japaneseDate(date: Date = new Date()): string {
+  return new Intl.DateTimeFormat(
+    'ja-JP-u-ca-japanese', {
+    era: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }
+  ).format(date)
+}
+
 export function yesterday(date: Date = new Date()): Date {
   date.setDate(date.getDate() - 1)
   return date
