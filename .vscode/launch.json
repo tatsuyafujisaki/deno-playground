@@ -1,0 +1,17 @@
+// https://typestrong.org/ts-node/docs/recipes/visual-studio-code/
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "args": [
+        "${workspaceFolder}/src/index.ts"
+      ]
+    }
+  ],
+}
