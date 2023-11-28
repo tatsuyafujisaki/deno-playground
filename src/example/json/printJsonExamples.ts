@@ -3,16 +3,16 @@ function printJsonRootType(json: string) {
   console.log(parsed == null ? 'null' : Array.isArray(parsed) ? 'array' : typeof parsed);
 }
 
-printJsonRootType('null'); // null
+printJsonRootType('{ "name": "Jane", "age": 18 }') // object
 
-printJsonRootType('true'); // true
-printJsonRootType('false'); // false
+printJsonRootType('["a", "b"]'); // array
 
 printJsonRootType('-1'); // number
 printJsonRootType('3.14'); // number
 
 printJsonRootType('"abc"'); // string
 
-printJsonRootType('{ "name": "Jane", "age": 18 }') // object
+printJsonRootType('true'); // true
+printJsonRootType('false'); // false
 
-printJsonRootType('["a", "b"]'); // array
+printJsonRootType('null'); // null
