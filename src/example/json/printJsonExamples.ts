@@ -13,6 +13,6 @@ printJsonRootType('3.14'); // number
 
 printJsonRootType('"abc"'); // string
 
-printJsonRootType('{ "name": "Jane", "age": 18}') // object
+printJsonRootType('{ "name": "Jane", "age": 18 }') // object
 
 printJsonRootType('["a", "b"]'); // array
