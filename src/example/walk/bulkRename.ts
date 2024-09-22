@@ -1,9 +1,11 @@
 import { walkSync } from "jsr:@std/fs/walk";
 
+const extension = ".jpg";
+
 const entries = walkSync(Deno.cwd(), {
   maxDepth: 1,
   includeDirs: false,
-  exts: ['JPG', 'JPEG', 'jpeg', 'jpg'],
+  exts: [extension.toLowerCase(), extension.toUpperCase()],
 });
 
 const sortedEntires = Array.from(entries).sort((a, b) =>
@@ -11,5 +13,5 @@ const sortedEntires = Array.from(entries).sort((a, b) =>
 );
 
 sortedEntires.forEach((entry, index) => {
-  Deno.renameSync(entry.path, `xxx-${index + 1}-yyyy-mm-dd.jpg`);
+  Deno.renameSync(entry.path, `xxx-${index + 1}-yyyy-mm-dd${extension}`);
 });
