@@ -3,7 +3,7 @@ import { walkSync } from "jsr:@std/fs/walk";
 const entries = walkSync(Deno.cwd(), {
   maxDepth: 1,
   includeDirs: false,
-  exts: [".JPG"],
+  exts: ['JPG', 'JPEG', 'jpeg', 'jpg'],
 });
 
 const sortedEntires = Array.from(entries).sort((a, b) =>
